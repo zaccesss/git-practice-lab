@@ -95,7 +95,7 @@ git commit -m ""  # Save snapshot
 git push          # Upload to GitHub
 git pull          # Download changes from GitHub
 ```
-If I know this cycle, I can already use Git like a developer.
+Once I know this cycle, I can already use Git like a developer.
 
 ---
 
@@ -103,8 +103,8 @@ If I know this cycle, I can already use Git like a developer.
 
 ### 1. Git Configuration
 ```
-git config --global user.name "zaccessss"
-git config --global user.email "isaacc.adjei1@gmail.com"
+git config --global user.name "z******s"
+git config --global user.email "******.******@gmail.com"
 git config --global user.name      # verify
 git config --global user.email     # verify
 ```
