@@ -83,7 +83,7 @@ Git = a **time machine** for projects.
 - You can return to old versions anytime
 - You can work on different versions using **branches**
 - You merge branches back together when finished
-Git does not auto-save — **you choose what to record**
+Git does not auto-save - **you choose what to record**
 
 ---
 
@@ -138,7 +138,7 @@ git branch -d test-branch
 
 ### 5. Connect to GitHub + Push
 ```
-git remote add origin https://github.com/zaccessss/cats.git
+git remote add origin https://github.com/z***e**s/cats.git
 git remote -v
 git branch -M main
 git push -u origin main
@@ -227,4 +227,4 @@ git push -u origin main
 
 ### ✔ Final Note
 This README exists so I never forget my Git fundamentals.  
-If I ever get stuck — **return here.**
+If I ever get stuck - **return here.**
