@@ -244,3 +244,5 @@ This README exists so I never forget my Git fundamentals.
 If I ever get stuck - **return here.**
 
 Setup check: Git configured correctly on laptop.
+
+Testing stuff in github.
