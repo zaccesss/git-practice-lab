@@ -14,11 +14,11 @@ This repository was created to practice essential Git and GitHub commands includ
 
 | Concept | Status |
 |--------|--------|
-| git init | ✔ Learned |
-| git add / commit | ✔ Practised |
-| git branch / checkout | ✔ Completed |
-| git merge | ✔ Completed |
-| git push / pull | ✔ Working fully |
+| git init | Learned |
+| git add / commit | Practised |
+| git branch / checkout | Completed |
+| git merge | Completed |
+| git push / pull | Working fully |
 
 ## File Included
 
