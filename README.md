@@ -1,6 +1,6 @@
 # Cats
 
-Small practice repository used to learn Git and GitHub basics.
+Small practice repository used to learn Version Control, Git and GitHub basics.
 
 ## What this repo is for
 
