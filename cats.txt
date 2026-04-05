@@ -1,4 +1,4 @@
 "Hello Git!" 
 Hello again Git!  // second update
-This line was added inside test-branch.
+This line was added inside test-branch
 
