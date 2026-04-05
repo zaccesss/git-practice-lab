@@ -1,5 +1,5 @@
 README.md
-#  Cats — Git Training Repository
+#  Cats - Git Training Repository
 
 This repository was created to practice essential Git and GitHub commands including:
 
