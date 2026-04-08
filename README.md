@@ -9,7 +9,7 @@ This repo is not a real project. It is a sandbox that I used to understand:
 - How to create a Git repository
 - How to track files with `git add` and `git commit`
 - How to create and merge branches
-- How to connect a local repo to GitHub and push changes
+- How to connect/sync a local repo to GitHub and push changes
 
 ## Git workflow practised
 
