@@ -1,246 +1,197 @@
-# Cats
+# Git Practice Lab
 
-Small practice repository used to learn Git and GitHub basics.
+Git Practice Lab is a small learning repository for practising Git, GitHub, and professional development workflow habits.
 
-## What this repo is for
+The repository started with a simple `cats.txt` file and now acts as a personal reference for version control basics, branch workflow, pull requests, and clean project history.
 
-This repo is not a real project. It is a sandbox that I used to understand:
+## Purpose
 
-- How to create a Git repository
-- How to track files with `git add` and `git commit`
-- How to create and merge branches
-- How to connect a local repo to GitHub and push changes
+This repo is not a production software project. It is a sandbox for learning how developers manage changes in a professional way.
 
-## Git workflow practised
+It is used to practise:
 
-Commands used in this repo include:
+- Creating and managing a local Git repository.
+- Tracking file changes with `git add` and `git commit`.
+- Reading project state with `git status` and `git log`.
+- Creating branches for isolated work.
+- Merging changes back into `main`.
+- Connecting a local repository to GitHub.
+- Using issues and pull requests to document work.
+- Reviewing diffs before merging.
 
-- `git init` to start a new repository in the `Cats` folder
-- `git status` to check which files are untracked or modified
-- `git add` to stage changes
-- `git commit` to save a snapshot of the staged changes
-- `git branch` and `git checkout` to create and switch branches
-- `git merge` to bring changes from a feature branch back into the main branch
-- `git remote add origin` and `git push -u origin main` to send the repo to GitHub
+## Current Learning Progress
 
-## File
+| Area | Status |
+| --- | --- |
+| Create a local Git repository | Learned |
+| Track files with `git add` | Practised |
+| Save snapshots with `git commit` | Practised |
+| View commit history | Practised |
+| Create and switch branches | Completed |
+| Merge a branch into `main` | Completed |
+| Connect local Git to GitHub | Completed |
+| Push and pull changes | Working |
+| Use issues before coding | Next habit |
+| Open pull requests | Next habit |
+| Review pull request diffs | Next habit |
 
-- `cats.txt` simple text file that I edited several times to see how Git tracks changes over time
+## Repository Files
 
-README.md
+| File | Purpose |
+| --- | --- |
+| `cats.txt` | Simple practice file used to test commits, branches, and merges. |
+| `README.md` | Main project overview and Git learning notes. |
+| `CONTRIBUTING.md` | Professional GitHub workflow guide for issues, branches, PRs, reviews, and cleanup. |
 
-# Cats — Git Training Repository
+## Basic Git Workflow
 
-This repository was created to practice essential Git and GitHub commands including:
+Use this loop for normal local changes:
 
-- Initialising a repo
-- Adding and committing files
-- Creating and merging branches
-- Viewing log history
-- Connecting to a remote GitHub repository
-- Pushing changes to `main`
-
-## Skills Practised
-
-| Concept               | Status          |
-| --------------------- | --------------- |
-| git init              | ✔ Learned       |
-| git add / commit      | ✔ Practised     |
-| git branch / checkout | ✔ Completed     |
-| git merge             | ✔ Completed     |
-| git push / pull       | ✔ Working fully |
-
-## File Included
-
-`cats.txt` — updated multiple times to test version control.
-
-## Next Steps
-
-- Create more branches and merge changes
-- Try rebasing and resolving merge conflicts
-- Start a real project repo using this workflow
-
-# 🐱 Cats - Git Training Repository + Learning Notes
-
-This repository began as a practical exercise in learning Git and GitHub using a simple file `cats.txt`. It is now a reference guide for understanding Git, tracking changes, branching, merging, and pushing to GitHub. This README contains all my Git notes so I can always return here when I need a reminder.
-
----
-
-## 🔥 What this repository is for
-
-- Practice using Git commands
-- Learn how commits and branches work
-- Understand how to connect local Git to GitHub
-- Store notes for future reference
-- Experiment safely without worrying about breaking anything
-
-Main file used for testing: `cats.txt`
-
----
-
-## 🧠 Git in Simple Terms
-
-Git = a **time machine** for projects.
-
-- Every save is a snapshot (**commit**)
-- Git remembers every version
-- You can return to old versions anytime
-- You can work on different versions using **branches**
-- You merge branches back together when finished
-  Git does not auto-save - **you choose what to record**
-
----
-
-## 📌 Core Git Workflow (Important!)
-
-```
-git status        # Check what changed
-git add <file>    # Stage changes
-git commit -m ""  # Save snapshot
-git push          # Upload to GitHub
-git pull          # Download changes from GitHub
-```
-
-Once I know this cycle, I can already use Git like a developer.
-
----
-
-## 🏁 Commands I Used While Building This Repo
-
-### 1. Git Configuration
-
-```
-git config --global user.name "z******s"
-git config --global user.email "******.******@gmail.com"
-git config --global user.name      # verify
-git config --global user.email     # verify
-```
-
-### 2. Create Repo & Track Files
-
-```
-git init
-git status
-git add cats.txt
-git commit -m "First commit: added cats.txt"
-```
-
-### 3. View Commit History
-
-```
-git log
-git log --oneline
-git log --oneline --graph
-```
-
-### 4. Branching + Merging
-
-```
-git branch test-branch
-git checkout test-branch
-# edit file + commit inside branch
-git commit -m "Added branch-specific line"
-git checkout main
-git merge test-branch
-# remove branch if finished
-git branch -d test-branch
-```
-
-### 5. Connect to GitHub + Push
-
-```
-git remote add origin https://github.com/z***e**s/cats.git
-git remote -v
-git branch -M main
-git push -u origin main
-git push
-```
-
----
-
-## 🧩 Branch Concepts (Easy Understanding)
-
-| Branch              | Purpose                 |
-| ------------------- | ----------------------- |
-| main                | stable version          |
-| feature/test-branch | development/experiments |
-
-Flow:
-
-```
-git branch new-idea
-git checkout new-idea
-# work + commit
-git checkout main
-git merge new-idea
-git branch -d new-idea   # optional
-```
-
----
-
-## 🛠 Troubleshooting Quick Fixes
-
-| Problem                                   | Cause                   | Fix                                      |
-| ----------------------------------------- | ----------------------- | ---------------------------------------- |
-| not a git repository                      | Git not initialized     | run `git init` or `cd` into repo         |
-| repository not found                      | wrong remote URL        | `git remote set-url origin <url>`        |
-| changes not appearing locally             | local repo outdated     | `git pull`                               |
-| VS Code sees changes but terminal doesn't | different branch active | check `git branch` + VS Code bottom-left |
-
----
-
-## 🚀 VS Code Workflow (GUI Version of Git)
-
-1. Open folder in VS Code
-2. Click **Source Control**
-3. File appears under **CHANGES**
-4. Stage using `+`
-5. Write commit message → press **Ctrl + Enter**
-6. Click Sync/Push icon to upload to GitHub
-   VS Code = Git commands but with buttons.
-
----
-
-## 📚 Git Cheat Sheet (Instant Memory Reload)
-
-```
-# setup
-git config --global user.name "Name"
-git config --global user.email "Email"
-
-# workflow
+```powershell
 git status
 git add .
-git commit -m "message"
+git commit -m "Describe what changed"
 git push
 git pull
-
-# branches
-git branch
-git branch new
-git checkout new
-git merge new
-
-# github connection
-git remote add origin <url>
-git push -u origin main
 ```
 
----
+What each command does:
 
-## 📍 Next Skill Progression
+| Command | Purpose |
+| --- | --- |
+| `git status` | Shows changed, staged, and untracked files. |
+| `git add .` | Stages changes ready for commit. |
+| `git commit -m "message"` | Saves a snapshot of staged changes. |
+| `git push` | Uploads local commits to GitHub. |
+| `git pull` | Downloads and merges remote changes into the local branch. |
 
-- Create more branches & merge them
-- Cause merge conflict on purpose + solve
-- Try `git rebase`
-- Clone repos using `git clone <url>`
-- Start a real C / Python / Arduino/ Security repo
+## Branch Workflow
 
----
+Use branches when working on a feature, fix, documentation update, or practice task.
 
-### ✔ Final Note
+```powershell
+git checkout main
+git pull
+git checkout -b feature/example-work
 
-This README exists so I never forget my Git fundamentals.  
-If I ever get stuck - **return here.**
+# Make changes.
 
-Setup check: Git configured correctly on laptop.
+git status
+git add .
+git commit -m "Add example work"
+git push origin feature/example-work
+```
+
+After the branch is pushed, open a pull request on GitHub.
+
+## Professional GitHub Workflow
+
+For meaningful changes, use this full workflow:
+
+```text
+issue -> branch -> commit -> push -> pull request -> review -> merge -> cleanup
+```
+
+This creates a clear record of:
+
+- What work was planned.
+- Which branch contained the change.
+- Which commits implemented it.
+- Which pull request reviewed and merged it.
+- Which issue was closed by the work.
+
+The detailed workflow lives in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Branch Naming
+
+Use clear branch names that describe the type of work.
+
+| Type | Branch format | Example |
+| --- | --- | --- |
+| Feature | `feature/name-of-feature` | `feature/telemetry-dashboard` |
+| Bug fix | `fix/name-of-bug` | `fix/auth-validation` |
+| Documentation | `docs/name-of-update` | `docs/readme-cleanup` |
+| Refactor | `refactor/name-of-change` | `refactor/config-loader` |
+| Coding problem | `solve/problem-name` | `solve/top-k-frequent-elements` |
+
+If Git cannot create a branch with a slash because of a local ref conflict, use a hyphenated name instead:
+
+```powershell
+git checkout -b docs-readme-cleanup
+```
+
+## Commit Message Examples
+
+Good commit messages are short, specific, and written in the present tense.
+
+```text
+Add professional GitHub workflow guide
+Clean up README structure
+Fix branch workflow example
+Document pull request cleanup steps
+Solve LeetCode 347 with hash map approach
+```
+
+Avoid vague messages such as:
+
+```text
+update
+fix stuff
+changes
+final
+```
+
+## Repo Name
+
+The current local folder is still named `cats`, but the project is really about Git practice.
+
+Recommended GitHub repository name:
+
+```text
+git-practice-lab
+```
+
+Other possible names:
+
+- `git-training-sandbox`
+- `github-learning-notes`
+- `version-control-practice`
+- `git-fundamentals-lab`
+
+`git-practice-lab` is the best option because it is short, clear, and accurately describes the purpose of the repo.
+
+## Suggested Next Steps
+
+1. Rename the GitHub repository from `cats` to `git-practice-lab`.
+2. Use issues and pull requests for all meaningful future changes.
+3. Practise resolving a merge conflict on purpose.
+4. Try `git clone`, `git rebase`, and pull request reviews.
+5. Add a `.gitignore` file when the repo starts containing real code.
+6. Start a separate real project repo for Python, C, Arduino, cybersecurity, or web development work.
+
+## Current Practice Change
+
+This documentation cleanup should be handled through the new workflow:
+
+```powershell
+git checkout -b docs-professional-github-workflow
+git add README.md CONTRIBUTING.md
+git commit -m "Add professional GitHub workflow guide"
+git push origin docs-professional-github-workflow
+```
+
+Then open a GitHub issue and pull request:
+
+```text
+Issue title: Add professional GitHub workflow guide
+PR title: Add professional GitHub workflow guide
+PR description: closes #ISSUE_NUMBER
+```
+
+After merging the PR:
+
+```powershell
+git checkout main
+git pull
+git branch -d docs-professional-github-workflow
+```
