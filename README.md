@@ -31,9 +31,9 @@ It is used to practise:
 | Merge a branch into `main` | Completed |
 | Connect local Git to GitHub | Completed |
 | Push and pull changes | Working |
-| Use issues before coding | Next habit |
-| Open pull requests | Next habit |
-| Review pull request diffs | Next habit |
+| Use issues before coding | In progress |
+| Open pull requests | In progress |
+| Review pull request diffs | In progress |
 
 ## Repository Files
 
@@ -171,21 +171,12 @@ Other possible names:
 
 ## Current Practice Change
 
-This documentation cleanup should be handled through the new workflow:
-
-```powershell
-git checkout -b docs-professional-github-workflow
-git add README.md CONTRIBUTING.md
-git commit -m "Add professional GitHub workflow guide"
-git push origin docs-professional-github-workflow
-```
-
-Then open a GitHub issue and pull request:
+This documentation cleanup is being handled through the new workflow:
 
 ```text
-Issue title: Add professional GitHub workflow guide
-PR title: Add professional GitHub workflow guide
-PR description: closes #ISSUE_NUMBER
+Issue: #4 Add professional GitHub workflow guide
+Pull request: #5 Add professional GitHub workflow guide
+Branch: docs-professional-github-workflow
 ```
 
 After merging the PR:
