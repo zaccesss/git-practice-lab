@@ -171,6 +171,8 @@ Other possible names:
 
 ## Current Practice Change
 
+Last updated: May 2, 2026.
+
 This documentation cleanup is being handled through the new workflow:
 
 ```text
