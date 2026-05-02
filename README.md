@@ -21,26 +21,26 @@ It is used to practise:
 
 ## Current Learning Progress
 
-| Area | Status |
-| --- | --- |
-| Create a local Git repository | Learned |
-| Track files with `git add` | Practised |
-| Save snapshots with `git commit` | Practised |
-| View commit history | Practised |
-| Create and switch branches | Completed |
-| Merge a branch into `main` | Completed |
-| Connect local Git to GitHub | Completed |
-| Push and pull changes | Working |
-| Use issues before coding | In progress |
-| Open pull requests | In progress |
-| Review pull request diffs | In progress |
+| Area                             | Status      |
+| -------------------------------- | ----------- |
+| Create a local Git repository    | Learned     |
+| Track files with `git add`       | Practised   |
+| Save snapshots with `git commit` | Practised   |
+| View commit history              | Practised   |
+| Create and switch branches       | Completed   |
+| Merge a branch into `main`       | Completed   |
+| Connect local Git to GitHub      | Completed   |
+| Push and pull changes            | Working     |
+| Use issues before coding         | In progress |
+| Open pull requests               | In progress |
+| Review pull request diffs        | In progress |
 
 ## Repository Files
 
-| File | Purpose |
-| --- | --- |
-| `cats.txt` | Simple practice file used to test commits, branches, and merges. |
-| `README.md` | Main project overview and Git learning notes. |
+| File              | Purpose                                                                             |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| `cats.txt`        | Simple practice file used to test commits, branches, and merges.                    |
+| `README.md`       | Main project overview and Git learning notes.                                       |
 | `CONTRIBUTING.md` | Professional GitHub workflow guide for issues, branches, PRs, reviews, and cleanup. |
 
 ## Basic Git Workflow
@@ -57,13 +57,13 @@ git pull
 
 What each command does:
 
-| Command | Purpose |
-| --- | --- |
-| `git status` | Shows changed, staged, and untracked files. |
-| `git add .` | Stages changes ready for commit. |
-| `git commit -m "message"` | Saves a snapshot of staged changes. |
-| `git push` | Uploads local commits to GitHub. |
-| `git pull` | Downloads and merges remote changes into the local branch. |
+| Command                   | Purpose                                                    |
+| ------------------------- | ---------------------------------------------------------- |
+| `git status`              | Shows changed, staged, and untracked files.                |
+| `git add .`               | Stages changes ready for commit.                           |
+| `git commit -m "message"` | Saves a snapshot of staged changes.                        |
+| `git push`                | Uploads local commits to GitHub.                           |
+| `git pull`                | Downloads and merges remote changes into the local branch. |
 
 ## Branch Workflow
 
@@ -106,13 +106,13 @@ The detailed workflow lives in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Use clear branch names that describe the type of work.
 
-| Type | Branch format | Example |
-| --- | --- | --- |
-| Feature | `feature/name-of-feature` | `feature/telemetry-dashboard` |
-| Bug fix | `fix/name-of-bug` | `fix/auth-validation` |
-| Documentation | `docs/name-of-update` | `docs/readme-cleanup` |
-| Refactor | `refactor/name-of-change` | `refactor/config-loader` |
-| Coding problem | `solve/problem-name` | `solve/top-k-frequent-elements` |
+| Type           | Branch format             | Example                         |
+| -------------- | ------------------------- | ------------------------------- |
+| Feature        | `feature/name-of-feature` | `feature/telemetry-dashboard`   |
+| Bug fix        | `fix/name-of-bug`         | `fix/auth-validation`           |
+| Documentation  | `docs/name-of-update`     | `docs/readme-cleanup`           |
+| Refactor       | `refactor/name-of-change` | `refactor/config-loader`        |
+| Coding problem | `solve/problem-name`      | `solve/top-k-frequent-elements` |
 
 If Git cannot create a branch with a slash because of a local ref conflict, use a hyphenated name instead:
 
