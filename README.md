@@ -188,3 +188,14 @@ git checkout main
 git pull
 git branch -d docs-professional-github-workflow
 ```
+
+
+## Contact and Support
+
+Open an [issue](https://github.com/zaccessss/git-practice-lab/issues) in this repository for questions or bugs.
+
+You can also reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or via my [website contact page](https://isaacadjei.me/contact).
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=footer" />
+</p>
