@@ -2,3 +2,4 @@
 Hello again Git!  // second update
 This line was added inside test-branch
 
+Practising a formal PR review.
