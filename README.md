@@ -82,7 +82,8 @@ Branches use a prefix that describes the type of work:
 | Refactor        | `refactor/name-of-change`  | `refactor/config-loader`          |
 | Coding problem  | `solve/problem-name`       | `solve/top-k-frequent-elements`   |
 
-If Git cannot create a branch with a slash because of a local ref conflict, use a hyphenated name instead, for example `git checkout -b docs-readme-cleanup`.
+> [!TIP]
+> If Git cannot create a branch with a slash because of a local ref conflict, use a hyphenated name instead, for example `git checkout -b docs-readme-cleanup`.
 
 Good commit messages are short, specific and written in the present tense, for example `Fix branch workflow example` rather than `update` or `fix stuff`.
 
