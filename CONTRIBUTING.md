@@ -1,6 +1,6 @@
 # Professional GitHub Workflow
 
-Use this workflow for every meaningful coding session. The goal is to build professional habits: plan the work, isolate changes on a branch, review the diff, merge through a pull request, and keep `main` clean.
+Use this workflow for every meaningful coding session. The goal is to build professional habits: plan the work, isolate changes on a branch, review the diff, merge through a pull request and keep `main` clean.
 
 ## Standard Session Workflow
 
@@ -13,7 +13,7 @@ Before coding, create a GitHub issue that describes the work.
 - Click **New issue**.
 - Use a clear title, such as `Add telemetry dashboard` or `Fix auth validation`.
 - Add a short description explaining what needs to change.
-- Add a relevant label: `enhancement`, `bug`, `docs`, or `refactor`.
+- Add a relevant label: `enhancement`, `bug`, `docs` or `refactor`.
 - Note the issue number, such as `#5`.
 
 ### 2. Create a Branch
@@ -96,7 +96,7 @@ Check for:
 - Unclear code.
 - Missing tests or manual checks.
 - README or documentation updates.
-- Sensitive information such as tokens, emails, or local paths.
+- Sensitive information such as tokens, emails or local paths.
 
 If useful, leave a short comment explaining a decision. This builds the habit of thinking like a reviewer.
 
@@ -133,7 +133,7 @@ This makes the project history easier to follow and demonstrates a professional 
 
 ### Competitive Programming Repositories
 
-Use this for LeetCode, NeetCode, Codeforces, and similar repos.
+Use this for LeetCode, NeetCode, Codeforces and similar repos.
 
 - Issue title: `Solve [ProblemName] - [Difficulty]`
 - Label: `enhancement`
@@ -144,7 +144,7 @@ Use this for LeetCode, NeetCode, Codeforces, and similar repos.
 
 ### Feature Projects
 
-Use this for larger projects such as dashboards, platforms, APIs, and apps.
+Use this for larger projects such as dashboards, platforms, APIs and apps.
 
 - Issue title: `Add [feature name]`
 - Labels: `enhancement`, `feature`
@@ -239,4 +239,4 @@ For meaningful changes, use:
 issue -> branch -> commit -> push -> pull request -> review -> merge -> cleanup
 ```
 
-Small typo fixes can be committed directly when appropriate, but features, fixes, documentation updates, and learning exercises should use the full workflow.
+Small typo fixes can be committed directly when appropriate, but features, fixes, documentation updates and learning exercises should use the full workflow.
