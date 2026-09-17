@@ -13,6 +13,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `.markdownlint.json` and a markdownlint CI workflow, with its own `.github/workflows/README.md`
 - YAML issue forms for bug reports and enhancements plus a pull request template
 - This changelog
+- `.github/ISSUE_TEMPLATE/config.yml` disabling the blank issue option, pointing to the security policy and code@isaacadjei.me instead
 
 ### Changed
 
