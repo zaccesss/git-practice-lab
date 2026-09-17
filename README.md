@@ -42,7 +42,7 @@ It is used to practise:
 | `cats.txt`        | Simple practice file used to test commits, branches and merges.                |
 | `README.md`       | Project overview and Git learning notes.                                       |
 | `CONTRIBUTING.md` | Full workflow guide for issues, branches, pull requests, reviews and cleanup.  |
-| `LICENSE`         | MIT license for the repository.                                                |
+| `LICENSE`         | MIT licence for the repository.                                                |
 
 ## Basic Git Workflow
 
@@ -99,6 +99,10 @@ The full step by step process, including opening issues, pushing branches, revie
 
 ## Contact
 
-Open an [issue](https://github.com/zaccesss/git-practice-lab/issues) in this repository for questions or bugs.
+Open an [issue](https://github.com/zaccesss/git-practice-lab/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
-Reach out directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+> [!TIP]
+> Reach out directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+
+> [!IMPORTANT]
+> For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.

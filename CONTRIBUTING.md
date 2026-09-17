@@ -140,7 +140,7 @@ Use this for LeetCode, NeetCode, Codeforces and similar repos.
 - Branch: `solve/[problem-code-or-name]`
 - Example issue: `Solve Contains Duplicate - Easy`
 - Example branch: `solve/contains-duplicate`
-- Example PR description: `closes #7 - Adds Python, C++, and Java solutions with complexity notes.`
+- Example PR description: `closes #7 - Adds Python, C++ and Java solutions with complexity notes.`
 
 ### Feature Projects
 
@@ -220,7 +220,7 @@ Title: Solve Top K Frequent Elements - Medium
 
 closes #42
 
-Adds Python, C++, and Java solutions with time and space complexity notes.
+Adds Python, C++ and Java solutions with time and space complexity notes.
 ```
 
 After merge:
