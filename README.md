@@ -7,7 +7,17 @@ I use this repository to practise Git, GitHub and the professional workflow habi
 
 ## Practice modules
 
-The real content lives in [practice/](practice), nine modules covering everything from staging a file for the first time through to writing a CI workflow and trying newer GitHub features as they mature. See [practice/README.md](practice/README.md) for the full list and the order I worked through them in.
+The real content lives in [practice/](practice), ten modules covering everything from staging a file for the first time through to the real aliases I use daily. Each module is split into an exercise, extra practice and a self-test. See [practice/README.md](practice/README.md) for the full list.
+
+## Documentation
+
+Detailed reference lives in [docs/](docs) rather than cluttering this file:
+
+| Doc | What it covers |
+| --- | --- |
+| [docs/glossary.md](docs/glossary.md) | Every Git and GitHub term used across the modules, defined plainly |
+| [docs/command-reference.md](docs/command-reference.md) | Every command in this repository, explained in full |
+| [docs/github-ui-vs-terminal.md](docs/github-ui-vs-terminal.md) | The same task shown both through the GitHub web UI and the terminal |
 
 ## Learning progress
 
@@ -23,40 +33,9 @@ The real content lives in [practice/](practice), nine modules covering everythin
 | Writing a GitHub Actions workflow from scratch | In progress |
 | Reflog, bisect, worktrees and hooks | Not started |
 | Newer GitHub features (rulesets, merge queue, Codespaces) | Not started |
+| My real daily aliases end to end | In progress |
 
 I update this table as I actually work through each module, not in advance.
-
-## Repository files
-
-| File | Purpose |
-| --- | --- |
-| `practice/` | Nine hands-on modules, each with its own exercise and notes |
-| `cats.txt` | My original practice file from before the modules existed |
-| `CONTRIBUTING.md` | The branch, issue and pull request workflow I follow for every change here |
-| `SUPPORT.md` | Where to go for help or to report something wrong |
-| `SECURITY.md` | How to report a security issue privately |
-| `CHANGELOG.md` | What changed here and when |
-| `LICENSE` | The MIT licence covering this repository |
-
-## Everyday Git workflow
-
-The loop I use for local changes:
-
-```bash
-git status
-git add .
-git commit -m "Describe what changed"
-git push
-git pull
-```
-
-| Command | Purpose |
-| --- | --- |
-| `git status` | Shows changed, staged and untracked files |
-| `git add .` | Stages changes ready for commit |
-| `git commit -m "message"` | Saves a snapshot of staged changes |
-| `git push` | Uploads local commits to GitHub |
-| `git pull` | Downloads and merges remote changes into the local branch |
 
 ## Branch and pull request workflow
 
@@ -75,10 +54,17 @@ Branches use a prefix that describes the type of work:
 | Documentation | `docs/name-of-update` | `docs/readme-cleanup` |
 | Refactor | `refactor/name-of-change` | `refactor/config-loader` |
 
-> [!TIP]
-> If Git cannot create a branch with a slash because of a local ref conflict, I use a hyphenated name instead, for example `git checkout -b docs-readme-cleanup`.
+Commit subjects follow the same conventional prefixes I use across all my other repositories, short, specific and in the imperative:
 
-I keep commit subjects short, specific and in the imperative, for example `Fix branch workflow example` rather than `update` or `fix stuff`.
+| Prefix | Use for | Example |
+| --- | --- | --- |
+| `feat:` | A new feature or module | `feat: add nine hands-on practice modules` |
+| `fix:` | Correcting something wrong | `fix: correct the rebase step order in 04.1` |
+| `docs:` | Documentation-only changes | `docs: add the command reference` |
+| `chore:` | Housekeeping, config, no user-facing change | `chore: add issue template config` |
+| `refactor:` | Restructuring without changing behaviour | `refactor: split modules into exercise, extra practice and self-test` |
+| `test:` | Adding or correcting a self-test | `test: add a self-test to module 06` |
+| `style:` | Formatting only, no content change | `style: fix a stray Oxford comma` |
 
 The full step by step process, including opening issues, pushing branches, reviewing diffs and cleaning up after a merge, lives in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -87,6 +73,7 @@ The full step by step process, including opening issues, pushing branches, revie
 - Work through the remaining practice modules, in particular the GitHub Actions and remote collaboration ones.
 - Add a module on GitHub Projects once I actually use one for something real.
 - Keep [09-advanced](practice/09-advanced) updated as GitHub ships new features worth trying.
+- Follow up in `dotfiles` on the alias gaps found in [practice/10-daily-workflow-and-aliases](practice/10-daily-workflow-and-aliases).
 
 ## Contact and support
 

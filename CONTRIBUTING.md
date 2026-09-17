@@ -57,6 +57,22 @@ git commit -m "Describe what changed"
 
 Prefer clear commit messages that explain the result of the change, not just the file that changed.
 
+### Commit Message Format
+
+I write every commit subject as `type: description`, following the same conventional commit style used across all of my other repositories. The type says what kind of change it is at a glance, before reading a single line of diff.
+
+| Type | Use for | Example |
+| --- | --- | --- |
+| `feat:` | A new feature, module or capability | `feat: add nine hands-on practice modules` |
+| `fix:` | Correcting something that was wrong | `fix: correct the rebase step order in 04.1` |
+| `docs:` | Documentation-only changes | `docs: add the command reference` |
+| `chore:` | Housekeeping, config, tooling, no user-facing change | `chore: add issue template config` |
+| `refactor:` | Restructuring without changing behaviour | `refactor: split modules into exercise and self-test` |
+| `test:` | Adding or correcting a self-test or check | `test: add a self-test to module 06` |
+| `style:` | Formatting only, no content change | `style: fix a stray Oxford comma` |
+
+Keep the subject in the imperative mood, as if finishing the sentence "If applied, this commit will...". `Fix branch workflow example` reads correctly that way, `Fixed branch workflow example` or `Fixes branch workflow example` do not.
+
 ### 4. Push the Branch
 
 ```powershell
@@ -140,6 +156,7 @@ Use this for LeetCode, NeetCode, Codeforces and similar repos.
 - Branch: `solve/[problem-code-or-name]`
 - Example issue: `Solve Contains Duplicate - Easy`
 - Example branch: `solve/contains-duplicate`
+- Commit prefix: `feat:`
 - Example PR description: `closes #7 - Adds Python, C++ and Java solutions with complexity notes.`
 
 ### Feature Projects
@@ -149,6 +166,7 @@ Use this for larger projects such as dashboards, platforms, APIs and apps.
 - Issue title: `Add [feature name]`
 - Labels: `enhancement`, `feature`
 - Branch: `feature/[feature-name]`
+- Commit prefix: `feat:`
 - Example issue: `Add real-time alerts system`
 - Example branch: `feature/real-time-alerts`
 
@@ -157,6 +175,7 @@ Use this for larger projects such as dashboards, platforms, APIs and apps.
 - Issue title: `Update [section] documentation`
 - Label: `docs`
 - Branch: `docs/[what-was-updated]`
+- Commit prefix: `docs:`
 - Example issue: `Update installation instructions`
 - Example branch: `docs/installation-guide`
 
@@ -165,6 +184,7 @@ Use this for larger projects such as dashboards, platforms, APIs and apps.
 - Issue title: `Fix [bug description]`
 - Label: `bug`
 - Branch: `fix/[bug-name]`
+- Commit prefix: `fix:`
 - Example issue: `Fix authentication token expiry`
 - Example branch: `fix/token-expiry`
 
@@ -209,7 +229,7 @@ git checkout -b solve/347-top-k-frequent-elements
 # Write the solution files.
 
 git add .
-git commit -m "Solve LeetCode 347 with hash map approach"
+git commit -m "feat: solve LeetCode 347 with hash map approach"
 git push origin solve/347-top-k-frequent-elements
 ```
 
