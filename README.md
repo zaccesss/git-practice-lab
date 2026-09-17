@@ -1,54 +1,48 @@
 # Git Practice Lab
 
-Git Practice Lab is a small learning repository for practising Git, GitHub and professional development workflow habits.
+[![Markdown Lint](https://github.com/zaccesss/git-practice-lab/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/git-practice-lab/actions/workflows/markdownlint.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-The repository started with a simple `cats.txt` file and now acts as a reference for version control basics, branch workflow, pull requests and clean project history.
+I use this repository to practise Git, GitHub and the professional workflow habits I want to be automatic before I rely on them in a real project. It started with a single `cats.txt` file to test my first commits and branches. It has since grown into a structured set of practice modules I come back to whenever I want to drill something specific or try a GitHub feature I have not used before.
 
-## Purpose
+## Practice modules
 
-This repo is not a production software project. It is a sandbox for learning how developers manage changes in a professional way.
+The real content lives in [practice/](practice), nine modules covering everything from staging a file for the first time through to writing a CI workflow and trying newer GitHub features as they mature. See [practice/README.md](practice/README.md) for the full list and the order I worked through them in.
 
-It is used to practise:
+## Learning progress
 
-- Creating and managing a local Git repository.
-- Tracking file changes with `git add` and `git commit`.
-- Reading project state with `git status` and `git log`.
-- Creating branches for isolated work.
-- Merging changes back into `main`.
-- Connecting a local repository to GitHub.
-- Using issues and pull requests to document work.
-- Reviewing diffs before merging.
+| Area | Status |
+| --- | --- |
+| Local repository basics (status, add, commit, log, diff) | Completed |
+| Branching and merging | Completed |
+| Resolving a real merge conflict on purpose | Completed |
+| Interactive rebase, squashing, amending | Completed |
+| Stash and cherry-pick | Completed |
+| Fork and upstream remote collaboration | In progress |
+| Issues, labels, tags and releases | In progress |
+| Writing a GitHub Actions workflow from scratch | In progress |
+| Reflog, bisect, worktrees and hooks | Not started |
+| Newer GitHub features (rulesets, merge queue, Codespaces) | Not started |
 
-## Current Learning Progress
+I update this table as I actually work through each module, not in advance.
 
-| Area                              | Status    |
-| ---------------------------------- | --------- |
-| Create a local Git repository      | Completed |
-| Track files with `git add`         | Practised |
-| Save snapshots with `git commit`   | Practised |
-| View commit history                | Practised |
-| Create and switch branches         | Completed |
-| Merge a branch into `main`         | Completed |
-| Connect local Git to GitHub        | Completed |
-| Push and pull changes              | Practised |
-| Use issues before coding           | Practised |
-| Open pull requests                 | Practised |
-| Review pull request diffs          | Practised |
+## Repository files
 
-## Repository Files
+| File | Purpose |
+| --- | --- |
+| `practice/` | Nine hands-on modules, each with its own exercise and notes |
+| `cats.txt` | My original practice file from before the modules existed |
+| `CONTRIBUTING.md` | The branch, issue and pull request workflow I follow for every change here |
+| `SUPPORT.md` | Where to go for help or to report something wrong |
+| `SECURITY.md` | How to report a security issue privately |
+| `CHANGELOG.md` | What changed here and when |
+| `LICENSE` | The MIT licence covering this repository |
 
-| File              | Purpose                                                                      |
-| ----------------- | ------------------------------------------------------------------------------ |
-| `cats.txt`        | Simple practice file used to test commits, branches and merges.                |
-| `README.md`       | Project overview and Git learning notes.                                       |
-| `CONTRIBUTING.md` | Full workflow guide for issues, branches, pull requests, reviews and cleanup.  |
-| `LICENSE`         | MIT licence for the repository.                                                |
+## Everyday Git workflow
 
-## Basic Git Workflow
+The loop I use for local changes:
 
-The everyday loop for local changes:
-
-```powershell
+```bash
 git status
 git add .
 git commit -m "Describe what changed"
@@ -56,17 +50,17 @@ git push
 git pull
 ```
 
-| Command                   | Purpose                                                     |
-| -------------------------- | ------------------------------------------------------------ |
-| `git status`               | Shows changed, staged and untracked files.                   |
-| `git add .`                | Stages changes ready for commit.                              |
-| `git commit -m "message"`  | Saves a snapshot of staged changes.                           |
-| `git push`                 | Uploads local commits to GitHub.                              |
-| `git pull`                 | Downloads and merges remote changes into the local branch.   |
+| Command | Purpose |
+| --- | --- |
+| `git status` | Shows changed, staged and untracked files |
+| `git add .` | Stages changes ready for commit |
+| `git commit -m "message"` | Saves a snapshot of staged changes |
+| `git push` | Uploads local commits to GitHub |
+| `git pull` | Downloads and merges remote changes into the local branch |
 
-## Branch and Pull Request Workflow
+## Branch and pull request workflow
 
-For meaningful changes, this repo follows:
+For anything beyond a one-line fix, I follow:
 
 ```text
 issue -> branch -> commit -> push -> pull request -> review -> merge -> cleanup
@@ -74,35 +68,32 @@ issue -> branch -> commit -> push -> pull request -> review -> merge -> cleanup
 
 Branches use a prefix that describes the type of work:
 
-| Type           | Branch format             | Example                         |
-| --------------- | -------------------------- | --------------------------------- |
-| Feature         | `feature/name-of-feature`  | `feature/telemetry-dashboard`     |
-| Bug fix         | `fix/name-of-bug`          | `fix/auth-validation`             |
-| Documentation   | `docs/name-of-update`      | `docs/readme-cleanup`             |
-| Refactor        | `refactor/name-of-change`  | `refactor/config-loader`          |
-| Coding problem  | `solve/problem-name`       | `solve/top-k-frequent-elements`   |
+| Type | Branch format | Example |
+| --- | --- | --- |
+| Feature | `feature/name-of-feature` | `feature/telemetry-dashboard` |
+| Bug fix | `fix/name-of-bug` | `fix/auth-validation` |
+| Documentation | `docs/name-of-update` | `docs/readme-cleanup` |
+| Refactor | `refactor/name-of-change` | `refactor/config-loader` |
 
 > [!TIP]
-> If Git cannot create a branch with a slash because of a local ref conflict, use a hyphenated name instead, for example `git checkout -b docs-readme-cleanup`.
+> If Git cannot create a branch with a slash because of a local ref conflict, I use a hyphenated name instead, for example `git checkout -b docs-readme-cleanup`.
 
-Good commit messages are short, specific and written in the present tense, for example `Fix branch workflow example` rather than `update` or `fix stuff`.
+I keep commit subjects short, specific and in the imperative, for example `Fix branch workflow example` rather than `update` or `fix stuff`.
 
 The full step by step process, including opening issues, pushing branches, reviewing diffs and cleaning up after a merge, lives in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Suggested Next Steps
+## What is next for me
 
-1. Use issues and pull requests for all meaningful future changes.
-2. Practise resolving a merge conflict on purpose.
-3. Try `git clone`, `git rebase` and pull request reviews.
-4. Add a `.gitignore` file when the repo starts containing real code.
-5. Start a separate project repo for Python, C, Arduino, cybersecurity or web development work.
+- Work through the remaining practice modules, in particular the GitHub Actions and remote collaboration ones.
+- Add a module on GitHub Projects once I actually use one for something real.
+- Keep [09-advanced](practice/09-advanced) updated as GitHub ships new features worth trying.
 
-## Contact
+## Contact and support
 
 Open an [issue](https://github.com/zaccesss/git-practice-lab/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
 > [!TIP]
-> Reach out directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
 
 > [!IMPORTANT]
 > For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
