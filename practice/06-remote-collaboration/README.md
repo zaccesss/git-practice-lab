@@ -2,21 +2,11 @@
 
 I use this module to practise the fork, clone and pull request flow this repository actually uses, from the other side, as if I were an outside contributor.
 
-## Exercise
-
-1. On GitHub, fork this repository into a second account or use a throwaway repository you own.
-2. Clone your fork locally: `git clone <your fork's URL>`.
-3. Add the original repository as a second remote: `git remote add upstream https://github.com/zaccesss/git-practice-lab.git`.
-4. Run `git remote -v` and confirm you now have both `origin` (your fork) and `upstream` (the original) listed.
-5. Create a branch, make a small change, push it to your fork: `git push origin your-branch-name`.
-6. Open a pull request from your fork's branch into the original repository's `main`.
-7. Separately, practise keeping your fork's `main` up to date: `git fetch upstream`, then `git merge upstream/main` while on your own `main`.
-
-## Questions to answer for yourself
-
-- What is the actual difference between `origin` and `upstream` in this setup?
-- Why does a pull request from a fork need both remotes configured, but a pull request from a branch on the same repository does not?
-- What happens if you push to `origin main` on your fork without first syncing it with `upstream/main`?
+| Part | What it covers |
+| --- | --- |
+| [06.1: Exercise](06.1-exercise) | Fork, clone, add upstream, open a pull request from a fork |
+| [06.2: Extra Practice](06.2-extra-practice) | Rebasing onto upstream, a fetch-only upstream, stacked pull requests, reviewing from the terminal |
+| [06.3: Self-Test](06.3-self-test) | Questions with no answers shown, to check what actually stuck |
 
 ## Why this matters to me
 
