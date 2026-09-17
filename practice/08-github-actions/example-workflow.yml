@@ -1,0 +1,37 @@
+name: Practice Workflow
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    name: Say hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Print a message
+        run: echo "This workflow ran on ${{ github.ref_name }}"
+
+  count-files:
+    name: Count practice files
+    runs-on: ubuntu-latest
+    needs: say-hello
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Count files in the practice folder
+        run: find practice -type f | wc -l
