@@ -64,7 +64,7 @@ Commit subjects follow the same conventional prefixes I use across all my other 
 | `chore:` | Housekeeping, config, no user-facing change | `chore: add issue template config` |
 | `refactor:` | Restructuring without changing behaviour | `refactor: split modules into exercise, extra practice and self-test` |
 | `test:` | Adding or correcting a self-test | `test: add a self-test to module 06` |
-| `style:` | Formatting only, no content change | `style: fix a stray Oxford comma` |
+| `style:` | Formatting only, no content change | `style: fix a stray trailing space` |
 
 The full step by step process, including opening issues, pushing branches, reviewing diffs and cleaning up after a merge, lives in [CONTRIBUTING.md](CONTRIBUTING.md).
 
