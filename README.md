@@ -7,7 +7,7 @@ I use this repository to practise Git, GitHub and the professional workflow habi
 
 ## Practice modules
 
-The real content lives in [practice/](practice), ten modules covering everything from staging a file for the first time through to the real aliases I use daily. Each module is split into an exercise, extra practice and a self-test. See [practice/README.md](practice/README.md) for the full list.
+The real content lives in [practice/](practice), fifteen modules covering everything from staging a file for the first time through to the real aliases I use daily, GitLab and the newest Git and GitHub CLI commands. Each module is split into an exercise, extra practice and a self-test. See [practice/README.md](practice/README.md) for the full list.
 
 ## Documentation
 
@@ -34,6 +34,11 @@ Detailed reference lives in [docs/](docs) rather than cluttering this file:
 | Reflog, bisect, worktrees and hooks | Not started |
 | Newer GitHub features (rulesets, merge queue, Codespaces) | Not started |
 | My real daily aliases end to end | In progress |
+| The same workflow on GitLab | Not started |
+| Commit signing and keeping secrets out | Not started |
+| Undoing mistakes and recovering work | Not started |
+| Planning with GitHub Projects | Not started |
+| Newer Git and GitHub CLI commands | Not started |
 
 I update this table as I actually work through each module, not in advance.
 
@@ -71,7 +76,8 @@ The full step by step process, including opening issues, pushing branches, revie
 ## What is next for me
 
 - Work through the remaining practice modules, in particular the GitHub Actions and remote collaboration ones.
-- Add a module on GitHub Projects once I actually use one for something real.
+- Work through [14-github-projects](practice/14-github-projects) on a real project board rather than a practice one.
+- Revisit [15-newer-git-and-gh](practice/15-newer-git-and-gh) whenever Git or `gh` ships a new release.
 - Keep [09-advanced](practice/09-advanced) updated as GitHub ships new features worth trying.
 - Follow up in `dotfiles` on the alias gaps found in [practice/10-daily-workflow-and-aliases](practice/10-daily-workflow-and-aliases).
 

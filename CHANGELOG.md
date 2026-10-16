@@ -9,6 +9,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Five new practice modules, each with an exercise, extra practice and a self-test: 11 GitLab, 12 signing and security, 13 undoing mistakes, 14 planning with GitHub Projects and 15 newer Git and GitHub CLI commands
+- `practice/11-gitlab/11.1-exercise/example-gitlab-ci.yml`, a two-stage pipeline to paste into a GitLab project
+- GitLab terms plus the new Git and GitHub terms in the glossary, with matching sections in the command reference
+- Rows in `docs/github-ui-vs-terminal.md` for issue branches, sub-issues, reverting and updating pull requests
 - `CODEOWNERS`, `CODE_OF_CONDUCT.md`, `SECURITY.md` and `SUPPORT.md`, matching the rest of the fleet
 - `.markdownlint.json` and a markdownlint CI workflow, with its own `.github/workflows/README.md`
 - YAML issue forms for bug reports and enhancements plus a pull request template
@@ -24,6 +28,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `actions/checkout` moved from v4.4.0 to v7.0.1 in the lint workflow and the module 08 example
+- `markdownlint-cli2-action` pinned to a commit at v24.2.0
+- `CONTRIBUTING.md` uses `git switch` throughout, with a practice-module example in place of the competitive programming one
 - Tidied the contributor guide examples.
 - The README's Contact section now links out to `SUPPORT.md` and `SECURITY.md` as callouts instead of plain prose
 - The Repository Files table wording tidied
@@ -32,3 +39,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - The README's detailed command tables moved to `docs/`, keeping the root file short
 - `cats.txt` moved from the repository root into `practice/00-cats-original`
 - `CONTRIBUTING.md`'s example commit messages and project-type sections now name their commit prefix explicitly
+
+### Fixed
+
+- `docs/github-ui-vs-terminal.md` no longer says rulesets can only be created in the browser

@@ -74,6 +74,40 @@ Every command that shows up across the practice modules, explained properly. The
 | `git fetch --prune` | Fetches and also removes local references to branches deleted on the remote |
 | `git push origin --delete <branch>` | Deletes a branch on the remote, not just locally |
 
+## Undoing more safely
+
+| Command | What it actually does |
+| --- | --- |
+| `git reset --soft HEAD~1` | Moves the branch back one commit, keeping the changes staged |
+| `git revert -m 1 <merge hash>` | Undoes a merge commit, keeping the first parent's side |
+| `git restore --source=<commit> <file>` | Puts one file back to how it was in an earlier commit without moving the branch |
+| `git switch --detach <commit>` | Checks out a commit without a branch, for looking around |
+| `git push --force-with-lease` | Force-pushes only if the remote branch is still where I last saw it |
+| `git fsck --lost-found` | Finds commits no branch or reflog entry points at any more |
+
+## Signing
+
+| Command | What it actually does |
+| --- | --- |
+| `git config --global gpg.format ssh` | Tells Git to sign with an SSH key instead of GPG |
+| `git config --global commit.gpgsign true` | Signs every commit without needing `-S` each time |
+| `git log --show-signature` | Shows each commit with the result of checking its signature |
+| `git verify-commit HEAD` | Checks one commit's signature |
+| `git tag -s <name> -m "message"` | Creates a signed annotated tag |
+
+## Newer Git commands
+
+| Command | What it actually does |
+| --- | --- |
+| `git config get <key>` | Reads a setting, the newer form of `git config --get` |
+| `git config list --show-origin` | Lists every setting with the file it came from |
+| `git repo info --all` | Reports facts about the repository, such as its object and reference formats |
+| `git last-modified` | Shows the commit that last changed each path |
+| `git range-diff <old>...<new>` | Compares two versions of the same series of commits, such as before and after a rebase |
+| `git maintenance start` | Schedules background tasks that keep a repository fast |
+| `git backfill` | Fetches the file contents a partial clone skipped, in batches |
+| `git sparse-checkout set <folder>` | Keeps only the named folders on disk |
+
 ## Diagnosing history
 
 | Command | What it actually does |
@@ -97,5 +131,26 @@ Every command that shows up across the practice modules, explained properly. The
 | `gh issue close` | Closes an issue directly, without needing a linked pull request |
 | `gh label list` | Lists every label that actually exists on the current repository |
 | `gh run watch` | Streams a running workflow's logs live in the terminal |
+| `gh run rerun <id> --failed` | Reruns only the jobs that failed in a workflow run |
+| `gh issue develop <number> --checkout` | Creates a branch linked to an issue and switches to it |
+| `gh issue create --parent <number>` | Opens a new issue as a sub-issue of another |
+| `gh pr checks --watch` | Waits for a pull request's checks, reporting when they finish |
+| `gh pr update-branch` | Brings a pull request branch up to date with its base |
+| `gh pr revert <number>` | Opens a pull request that reverts a merged one |
+| `gh ruleset check <branch>` | Lists every rule that would apply to a branch name |
+| `gh project item-add <number> --owner "@me" --url <issue url>` | Adds an issue or pull request to a project |
+| `gh release verify` | Checks a release's attestation |
+
+## GitLab CLI (`glab`)
+
+| Command | What it actually does |
+| --- | --- |
+| `glab auth login` | Signs in to GitLab.com or a self-managed instance |
+| `glab repo create <name>` | Creates a new project |
+| `glab mr create --fill` | Opens a merge request from the current branch, filled in from its commits |
+| `glab ci status` | Shows the pipeline for the current branch |
+| `glab ci view` | Opens an interactive view of the pipeline's jobs and logs |
+| `glab ci lint` | Checks `.gitlab-ci.yml` for mistakes before pushing |
+| `glab mr merge --squash --remove-source-branch` | Squash-merges the merge request and deletes its branch |
 
 See [practice/10-daily-workflow-and-aliases](../practice/10-daily-workflow-and-aliases) for the shorter alias I actually type for most of the commands above.
