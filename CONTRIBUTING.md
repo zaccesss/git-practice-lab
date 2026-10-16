@@ -21,9 +21,9 @@ Before coding, create a GitHub issue that describes the work.
 Create a branch from `main` for the issue.
 
 ```powershell
-git checkout main
-git pull
-git checkout -b feature/description-of-work
+git switch main
+git pull --ff-only
+git switch -c feature/description-of-work
 ```
 
 Common branch prefixes:
@@ -34,15 +34,15 @@ Common branch prefixes:
 | `fix/` | Bug fixes |
 | `docs/` | Documentation updates |
 | `refactor/` | Code improvements without feature changes |
-| `solve/` | Competitive programming solutions |
+| `practice/` | Throwaway branches made while working through a module |
 
 Examples:
 
 ```powershell
-git checkout -b feature/telemetry-dashboard
-git checkout -b fix/auth-validation
-git checkout -b docs/readme-update
-git checkout -b solve/347-top-k-frequent-elements
+git switch -c feature/telemetry-dashboard
+git switch -c fix/auth-validation
+git switch -c docs/readme-update
+git switch -c practice/undo-demo
 ```
 
 ### 3. Do the Work
@@ -127,8 +127,8 @@ When the PR is ready:
 ### 8. Clean Up Locally
 
 ```powershell
-git checkout main
-git pull
+git switch main
+git pull --ff-only
 git branch -d feature/your-branch-name
 ```
 
@@ -147,17 +147,17 @@ This makes the project history easier to follow and demonstrates a professional 
 
 ## Project Examples
 
-### Competitive Programming Repositories
+### Practice Modules
 
-Use this for LeetCode, NeetCode, Codeforces and similar repos.
+Use this for a new module or a new part of an existing one in this repository.
 
-- Issue title: `Solve [ProblemName] - [Difficulty]`
-- Label: `enhancement`
-- Branch: `solve/[problem-code-or-name]`
-- Example issue: `Solve Contains Duplicate - Easy`
-- Example branch: `solve/contains-duplicate`
+- Issue title: `Add [module or part]`
+- Label: `content`
+- Branch: `feature/[module-name]`
+- Example issue: `Add a GitLab module`
+- Example branch: `feature/gitlab-module`
 - Commit prefix: `feat:`
-- Example PR description: `closes #7 - Adds Python, C++ and Java solutions with complexity notes.`
+- Example PR description: `closes #7 - Adds module 11 with an exercise, extra practice and a self-test.`
 
 ### Feature Projects
 
@@ -216,40 +216,42 @@ To practise real external review:
 Issue already created:
 
 ```text
-#42 Solve Top K Frequent Elements - Medium
+#42 Add a self-test to module 13
 ```
 
 Terminal:
 
 ```powershell
-git checkout main
-git pull
-git checkout -b solve/347-top-k-frequent-elements
+git switch main
+git pull --ff-only
+git switch -c test/13-self-test
 
-# Write the solution files.
+# Write the self-test.
 
 git add .
-git commit -m "feat: solve LeetCode 347 with hash map approach"
-git push origin solve/347-top-k-frequent-elements
+git commit -m "test: add a self-test to module 13"
+git push origin test/13-self-test
 ```
 
 GitHub PR:
 
 ```text
-Title: Solve Top K Frequent Elements - Medium
+Title: Add a self-test to module 13
 
 closes #42
 
-Adds Python, C++ and Java solutions with time and space complexity notes.
+Adds six questions covering restore, reset, revert and recovering with the reflog.
 ```
 
 After merge:
 
 ```powershell
-git checkout main
-git pull
-git branch -d solve/347-top-k-frequent-elements
+git switch main
+git pull --ff-only
+git branch -D test/13-self-test
 ```
+
+`-D` rather than `-d` because a squash-merge leaves the branch looking unmerged to Git.
 
 ## Rule Going Forward
 

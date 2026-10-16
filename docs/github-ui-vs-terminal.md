@@ -11,8 +11,12 @@ The same task, done through the GitHub web interface and through the terminal, s
 | Delete a merged branch | Delete branch button that appears after merge | `git branch -d name` locally then `git push origin --delete name` on GitHub, `gdone` does both plus pruning in one step |
 | Add a label | Labels menu in the issue or pull request sidebar | `gh issue edit N --add-label x` / `gh pr edit N --add-label x`, `ghaddlabel N x` tries both automatically |
 | Create a release | Releases -> Draft a new release, pick or create a tag | `git tag -a vX.Y.Z -m "message" && git push origin vX.Y.Z`, then `gh release create` |
-| Enable a branch ruleset | Settings -> Rules -> Rulesets -> New ruleset | `gh api repos/{owner}/{repo}/rulesets` for read-only inspection, rulesets themselves are UI-only to create as of writing |
+| Enable a branch ruleset | Settings -> Rules -> Rulesets -> New ruleset | `gh ruleset list` and `gh ruleset check <branch>` to inspect them, `gh api -X POST repos/{owner}/{repo}/rulesets --input ruleset.json` to create one from a JSON file |
 | Add an image to an issue or comment | Drag and drop directly into the text box | Not possible from the terminal, `gh` has no equivalent, this is a genuinely UI-only action |
+| Start a branch for an issue | Development section in the issue sidebar -> Create a branch | `gh issue develop N --checkout` |
+| Add a sub-issue | Create sub-issue button under the issue body | `gh issue create --parent N` |
+| Revert a merged pull request | Revert button at the bottom of the merged pull request | `gh pr revert N` |
+| Update a pull request branch from its base | Update branch button in the merge box | `gh pr update-branch` |
 | Check a workflow run's logs | Actions tab -> the run -> the job -> the step | `gh run list` then `gh run view <id> --log` for one run, `gh run watch` for a live stream |
 | Fork a repository | Fork button, top right of the repository page | `gh repo fork` or `ghfork` |
 | Sync a fork with upstream | Sync fork button on the fork's own page | `git fetch upstream && git merge upstream/main` or the shorter `gh repo sync` |

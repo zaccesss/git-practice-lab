@@ -1,6 +1,6 @@
 # Glossary
 
-Plain definitions for every term used across the practice modules, Git and GitHub side by side. My [git-unlocked](https://github.com/zaccesss/git-unlocked) repository has a much larger [full glossary](https://github.com/zaccesss/git-unlocked/blob/main/09-reference/glossary.md) covering GitLab and other platforms too, this one stays scoped to what actually appears in this repository.
+Plain definitions for every term used across the practice modules, Git and GitHub side by side. My [git-unlocked](https://github.com/zaccesss/git-unlocked) repository has a much larger [full glossary](https://github.com/zaccesss/git-unlocked/blob/main/09-reference/glossary.md) covering other platforms too, this one stays scoped to what actually appears in this repository.
 
 ## Git terms
 
@@ -42,6 +42,24 @@ A binary search through commit history to find the exact commit that introduced 
 
 **Worktree**
 A second working directory checked out from the same repository, letting me have two branches open side by side without cloning twice.
+
+**Restore**
+Putting a file back to how it was in the staging area or a commit, without moving any branch. `git restore` replaced the file-level uses of `git checkout`.
+
+**Reset**
+Moving the current branch to another commit. `--soft` keeps the changes staged, `--mixed` (the default) keeps them unstaged and `--hard` throws them away.
+
+**Revert**
+A new commit that undoes an earlier one, the safe undo for anything already pushed because no existing history is rewritten.
+
+**Detached HEAD**
+Checking out a commit directly rather than a branch. New commits made there belong to no branch until one is created for them.
+
+**Signed commit**
+A commit carrying a cryptographic signature from a GPG or SSH key, which GitHub and GitLab show as Verified when the key is on the author's account.
+
+**Partial clone**
+A clone that skips some objects, such as file contents with `--filter=blob:none`. It fetches them later when needed or with `git backfill`.
 
 **Remote**
 A named reference to another copy of the repository, usually on GitHub. `origin` and `upstream` are conventional names, not special keywords.
@@ -104,6 +122,50 @@ A full cloud development environment tied to a repository, configurable so it op
 
 **Private vulnerability reporting**
 GitHub's built-in flow letting someone report a security issue privately through the Security tab, without needing a separate email address.
+
+**Sub-issue**
+An issue attached to a parent issue, so the parent shows progress as its children close.
+
+**GitHub Project**
+A planning board or table that lives on an account or organisation and pulls in issues and pull requests from any of its repositories.
+
+**Push protection**
+Secret scanning that blocks a push containing a recognised token before it reaches GitHub.
+
+**Vigilant mode**
+An account setting that marks every unsigned commit of mine as Unverified, so a commit made in my name without my key stands out.
+
+**Release attestation**
+A signed statement from GitHub about a release and its assets, checked with `gh release verify`.
+
+## GitLab terms
+
+**Project**
+GitLab's name for a repository plus everything around it: issues, merge requests, pipelines and settings.
+
+**Group**
+GitLab's equivalent of an organisation, holding projects and subgroups with shared members and permissions.
+
+**Merge request (MR)**
+GitLab's name for a pull request.
+
+**Pipeline**
+A run of the jobs defined in `.gitlab-ci.yml`, grouped into stages that run in order.
+
+**Job**
+One task in a pipeline, run by a runner, usually in a fresh container.
+
+**Runner**
+The machine or container that picks up pipeline jobs and runs them.
+
+**Artifact**
+Files a job saves so a later stage or a person can use them.
+
+**Protected branch**
+A branch only chosen roles can push or merge to, GitLab's equivalent of branch protection.
+
+**glab**
+The official GitLab CLI, GitLab's equivalent of `gh`.
 
 ## See also
 
