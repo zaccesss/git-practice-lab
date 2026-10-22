@@ -7,6 +7,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.0.1] - 2026-10-22
+
 ### Added
 
 - Five new practice modules, each with an exercise, extra practice and a self-test: 11 GitLab, 12 signing and security, 13 undoing mistakes, 14 planning with GitHub Projects and 15 newer Git and GitHub CLI commands
