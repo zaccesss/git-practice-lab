@@ -262,3 +262,7 @@ issue -> branch -> commit -> push -> pull request -> review -> merge -> cleanup
 ```
 
 Small typo fixes can be committed directly when appropriate, but features, fixes, documentation updates and learning exercises should use the full workflow.
+
+## Using AI
+
+AI tools are welcome within my [AI policy](https://github.com/zaccesss/ai-policy), also [on my site](https://isaacadjei.me/ai-policy). **Every pull request must say how AI was used, even when the answer is None.** Write your own issue and pull request titles and descriptions, understand everything you submit and test it before you open it.
