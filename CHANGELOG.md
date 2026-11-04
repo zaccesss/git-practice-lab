@@ -7,9 +7,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-03
+
+### Added
+
+- A release badge and a diagram of the branch and pull request workflow.
+
 ### Changed
 
 - Community files follow the [AI policy](https://github.com/zaccesss/ai-policy): pull requests declare AI use and issue forms ask whether AI helped. Security reports go to security@isaacadjei.me.
+- The contact address in the README, `SUPPORT.md` and the issue template config is contact@isaacadjei.me.
+- Routine tidy-up.
+
+### Fixed
+
+- Module 10 links to the git and gh topic files at their current paths in the dotfiles.
 
 ## [0.0.1] - 2026-10-22
 

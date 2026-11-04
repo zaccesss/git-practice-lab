@@ -12,7 +12,7 @@ Neither belongs in this repository, they belong in `dotfiles` itself. This modul
 1. Write the raw command that lists every local branch already merged into `main`, excluding `main` itself: `git branch --merged main | grep -v '\* \|main'`.
 2. Confirm it actually lists a real stale branch by creating one, merging it and leaving it undeleted.
 3. Pipe that list into `xargs -r git branch -d` and confirm it deletes every merged branch in one step.
-4. Turn that into a shell function called `gclean-branches` in a scratch file, following the same style as the existing functions in `mac/topics/04-git.zsh` (a short comment above it explaining why it exists).
+4. Turn that into a shell function called `gclean-branches` in a scratch file, following the same style as the existing functions in `shell/mac/topics/04-git.zsh` (a short comment above it explaining why it exists).
 5. If this genuinely belongs in `dotfiles`, follow the same issue-to-PR workflow I use everywhere else to add it there, not here.
 
 ## Questions to answer for myself

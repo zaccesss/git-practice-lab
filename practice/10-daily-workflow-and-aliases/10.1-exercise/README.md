@@ -1,6 +1,6 @@
 # 10.1: Exercise
 
-Every command below is shown as `full command | alias`, pulled directly from [`mac/topics/04-git.zsh`](https://github.com/zaccesss/dotfiles/blob/main/mac/topics/04-git.zsh) and [`mac/topics/17-gh.zsh`](https://github.com/zaccesss/dotfiles/blob/main/mac/topics/17-gh.zsh) in my [dotfiles](https://github.com/zaccesss/dotfiles). Linux and Windows carry the same aliases in `linux/topics/` and `windows/topics/`.
+Every command below is shown as `full command | alias`, pulled directly from [`shell/mac/topics/04-git.zsh`](https://github.com/zaccesss/dotfiles/blob/main/shell/mac/topics/04-git.zsh) and [`shell/mac/topics/17-gh.zsh`](https://github.com/zaccesss/dotfiles/blob/main/shell/mac/topics/17-gh.zsh) in my [dotfiles](https://github.com/zaccesss/dotfiles). Linux and Windows carry the same aliases in `shell/linux/topics/` and `shell/windows/topics/`.
 
 ## Everyday Git
 

@@ -1,7 +1,8 @@
 # Git Practice Lab
 
 [![Markdown Lint](https://github.com/zaccesss/git-practice-lab/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/git-practice-lab/actions/workflows/markdownlint.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/zaccesss/git-practice-lab?label=release)](https://github.com/zaccesss/git-practice-lab/releases/latest)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)](LICENSE)
 
 I use this repository to practise Git, GitHub and the professional workflow habits I want to be automatic before I rely on them in a real project. It started with a single `cats.txt` file to test my first commits and branches. It has since grown into a structured set of practice modules I come back to whenever I want to drill something specific or try a GitHub feature I have not used before.
 
@@ -50,6 +51,18 @@ For anything beyond a one-line fix, I follow:
 issue -> branch -> commit -> push -> pull request -> review -> merge -> cleanup
 ```
 
+```mermaid
+flowchart LR
+    ISSUE["Issue<br/>what and why"] --> BRANCH["Branch<br/>feature/, fix/, docs/, refactor/"]
+    BRANCH --> COMMIT["Commit<br/>feat:, fix:, docs:, chore:"]
+    COMMIT --> PUSH["Push"]
+    PUSH --> PR["Pull request<br/>closes the issue"]
+    PR --> REVIEW["Review"]
+    REVIEW -- "changes asked for" --> COMMIT
+    REVIEW -- "approved" --> MERGE["Squash merge"]
+    MERGE --> CLEAN["Clean up<br/>delete the branch, pull main"]
+```
+
 Branches use a prefix that describes the type of work:
 
 | Type | Branch format | Example |
@@ -86,7 +99,7 @@ The full step by step process, including opening issues, pushing branches, revie
 Open an [issue](https://github.com/zaccesss/git-practice-lab/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
 > [!TIP]
-> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+> Reach me directly at [contact@isaacadjei.me](mailto:contact@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
 
 > [!IMPORTANT]
 > For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
